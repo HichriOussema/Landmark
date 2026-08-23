@@ -27,6 +27,5 @@ struct LandmarkRow: View {
 #Preview{
     Group {
         LandmarkRow(landmark: landmarks[2])
-        LandmarkRow(landmark: landmarks[3])
     }
 }
