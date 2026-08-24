@@ -7,9 +7,10 @@
 
 import Foundation
 
-//creating an array of landmarks that you initialize from landmarkData.json
-var landmarks : [Landmark] = load("landmarkData.json")
-
+@Observable
+class ModelData {
+    var landmarks : [Landmark] = load("landmarkData.json")
+}
 //Create a load(_:) method that fetches JSON data with a given name from the app’s main bundle.
 
 //The load method relies on the return type’s conformance to the Decodable protocol, which is one component of the Codable protocol.
