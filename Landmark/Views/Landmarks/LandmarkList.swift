@@ -37,7 +37,7 @@ struct LandmarkList: View {
                 Toggle(isOn: $sortTrigger){
                     Text("Sort toggle")
                 }
-                Toggle(isOn: .constant(showFavoriteOnly)){
+                Toggle(isOn: $showFavoriteOnly){
                     Text("Favorites only")
                 }
                 ForEach(sortByname()) { landmark in
